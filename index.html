@@ -72,10 +72,9 @@
     <p class="ThongTinThanhToanText">STK 0358438941 || CTK NGUYEN VO NGOC HIEU</p>
     </div>
     <br>
-
-    <script>
-        function copyToClipboard(elementId) {
-            var text = document.getElementById(elementId).innerText;
+        <script>
+        function copyToClipboard() {
+            var text = document.getElementById('mbbank').innerText;
             var input = document.createElement('textarea');
             input.innerHTML = text;
             document.body.appendChild(input);
@@ -86,8 +85,7 @@
         }
     </script>
 
-    <a href="#" onclick="copyToClipboard('mbbank')">Copy MBbank Info</a><br>
-    <a href="#" onclick="copyToClipboard('momo')">Copy Momo Info</a>
+    <a href="#" onclick="copyToClipboard()">Copy MBbank Info</a>
     </div>
     <footer class="Cuoi Trang">
       <p class="ThanhDieuFtCopyright">
