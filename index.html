@@ -73,17 +73,21 @@
     </div>
     <br>
 
-    <!-- ===== Thanh Gạch Ngang ===== -->
-        <hr class="ThanhGachNgang">
-    <!-- Web APIs Section -->
-    <div id="WebAPIs">
-        <h2>Web APIs</h2>
-        <ul>
-            <li>Fetch API</li>
-            <li>Geolocation API</li>
-            <li>Web Storage API</li>
-            <!-- Add more Web APIs here -->
-        </ul>
+    <script>
+        function copyToClipboard(elementId) {
+            var text = document.getElementById(elementId).innerText;
+            var input = document.createElement('textarea');
+            input.innerHTML = text;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand('copy');
+            document.body.removeChild(input);
+            alert("Copied to clipboard: " + text);
+        }
+    </script>
+
+    <a href="#" onclick="copyToClipboard('mbbank')">Copy MBbank Info</a><br>
+    <a href="#" onclick="copyToClipboard('momo')">Copy Momo Info</a>
     </div>
     <footer class="Cuoi Trang">
       <p class="ThanhDieuFtCopyright">
